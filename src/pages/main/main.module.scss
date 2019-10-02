@@ -1,0 +1,66 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.main > * {
+  margin: 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+
+$font-size: 25px;
+
+.buttons {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: $font-size;
+  line-height: $font-size;
+  align-items: center;
+}
+
+
+.buttons > Button {
+  margin-top: 0 !important;
+  height: 50px;
+  font-size: $font-size;
+  line-height: $font-size;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  font-size: $font-size;
+}
+
+
+
+
+
+.switch3 {
+  @extend .switch;
+}
+
+.switch3 > Input {
+  width: 210px;
+  border: 1px solid lightskyblue;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+
+.space {
+  margin-left: 20px;
+}
